@@ -53,4 +53,4 @@
 ---
 
 ## 6. 附：AI Q&A 的原文（可直接貼到 AI 並分享）
-（此欄放入你要分享的 AI 問答內容；若老師要看分享網址，可以按照前述說明操作）
+(chatgpt)[https://chatgpt.com/share/6924476a-fd44-8012-a7be-87cdaada71f6]
