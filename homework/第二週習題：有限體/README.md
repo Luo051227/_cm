@@ -53,4 +53,4 @@
 ---
 
 ## 6. 附：AI Q&A 的原文（可直接貼到 AI 並分享）
-(chatgpt)[https://chatgpt.com/share/6924476a-fd44-8012-a7be-87cdaada71f6]
+[chatgpt](https://chatgpt.com/share/6924476a-fd44-8012-a7be-87cdaada71f6)
