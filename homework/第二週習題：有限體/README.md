@@ -30,7 +30,7 @@
 
 ---
 
-## 3. 程式檔案說明（同目錄）
+## 3. 程式檔案說明
 - `finite_field.py` : GF(p) 元素類別（`FiniteFieldElement`），支援 `+ - * /`。  
 - `group_axioms.py`  : 提供群公理檢驗工具（closure, assoc, identity, inverses, commutativity）。  
 - `field_axioms.py`  : 檢查分配律 `a*(b+c) == a*b + a*c`。  
@@ -52,5 +52,5 @@
 
 ---
 
-## 6. 附：AI Q&A 的原文（可直接貼到 AI 並分享）
+## 6. AI
 [chatgpt](https://chatgpt.com/share/6924476a-fd44-8012-a7be-87cdaada71f6)
