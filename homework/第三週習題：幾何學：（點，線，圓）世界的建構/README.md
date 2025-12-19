@@ -13,9 +13,10 @@
 
 斜截式 (Slope-intercept Form)：`y = mx + b，其中 m 是斜率，b 是 y 軸截距。`  
 ## 3. 圓 (Circle)
-圓是在平面上，到固定點（圓心）距離為定值（半徑）的所有點的集合。
+圓是在平面上，到固定點（圓心）距離為定值（半徑）的所有點的集合。  
+圓標準式 (Standard Form)：`(x - h)^2 + (y - k)^2 = r^2，其中 (h, k) 是圓心，r 是半徑。`  
+<img width="200" height="113" alt="image" src="https://github.com/user-attachments/assets/f39e5012-3e18-473e-8021-e4f8d57d07d5" />
 
-標準式 (Standard Form)：`(x - h)^2 + (y - k)^2 = r^2，其中 (h, k) 是圓心，r 是半徑。`
 
 # 💻 計算幾何：交點與垂直線
 ## 1. 兩直線交點 (Intersection of Two Lines)
