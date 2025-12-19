@@ -14,7 +14,7 @@
 斜截式 (Slope-intercept Form)：`y = mx + b，其中 m 是斜率，b 是 y 軸截距。`  
 ## 3. 圓 (Circle)
 圓是在平面上，到固定點（圓心）距離為定值（半徑）的所有點的集合。  
-圓標準式 (Standard Form)：<img width="350" height="85" alt="image" src="https://github.com/user-attachments/assets/9f132c8b-9053-499b-8fcd-e273087eb16a" />`，其中 (h, k) 是圓心，r 是半徑。`  
+圓標準式 (Standard Form)：<img width="300" height="85" alt="image" src="https://github.com/user-attachments/assets/9f132c8b-9053-499b-8fcd-e273087eb16a" />`，其中 (h, k) 是圓心，r 是半徑。`  
 <img width="200" height="113" alt="image" src="https://github.com/user-attachments/assets/f39e5012-3e18-473e-8021-e4f8d57d07d5" />
 
 
