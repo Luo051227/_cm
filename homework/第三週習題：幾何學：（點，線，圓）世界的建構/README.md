@@ -32,10 +32,23 @@
 
 
 # 兩直線交點 (Intersection of Two Lines)
-給定兩條直線：<img width="323" height="23" alt="image" src="https://github.com/user-attachments/assets/1b08e439-6fcd-4b42-840b-d6af650cd44b" />
+兩條直線可以用一般式表示：<img width="323" height="23" alt="image" src="https://github.com/user-attachments/assets/1b08e439-6fcd-4b42-840b-d6af650cd44b" />
+```python
+def intersect_lines(a1, b1, c1, a2, b2, c2):
+    # 計算行列式 Determinant
+    det = a1 * b2 - a2 * b1
+    if det == 0:
+        return None  # 平行或重合，無單一交點
+    
+    x = (c1 * b2 - c2 * b1) / det
+    y = (a1 * c2 - a2 * c1) / det
+    return (x, y)
+
+# 範例：x + y = 2 且 x - y = 0
+print(f"直線交點: {intersect_lines(1, 1, 2, 1, -1, 0)}") # 預期 (1.0, 1.0)
+```
 
 
-這是一個二元一次聯立方程式組。我們可以利用克萊默法則 (Cramer's Rule) 或代入消去法求解 $x$ 和 $y$。
 ## 數學基礎：
 `D = A_1B_2 - A_2B_1` `D_x = C_2B_1 - C_1B_2` `D_y = A_2C_1 - A_1C_2`
 
