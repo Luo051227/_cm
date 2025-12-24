@@ -17,6 +17,19 @@
 <img width="200" height="113" alt="image" src="https://github.com/user-attachments/assets/f39e5012-3e18-473e-8021-e4f8d57d07d5" />  
 <img width="600" height="397" alt="image" src="https://github.com/user-attachments/assets/02c6aba2-5767-4d93-b962-804a0b109c39" />
 
+## 直線與圓的關係：切線與割線
+切線 (Tangent Line)
+* 條件： d = r
+* 特性： 直線與圓恰好只有一個交點
+* 切點的半徑相互垂直
+割線 (Secant Line)
+* 條件： d < r
+* 特性： 直線與圓有兩個交點。
+* 割線在圓內部：弦
+* 割線通過圓心：直徑
+<img width="226" height="104" alt="image" src="https://github.com/user-attachments/assets/c23950d2-2a46-4ef9-8973-94c1ef16db9d" />
+
+
 
 # 兩直線交點 (Intersection of Two Lines)
 給定兩條直線：`L_1: A_1x + B_1y + C_1 = 0` & `L_2: A_2x + B_2y + C_2 = 0`
