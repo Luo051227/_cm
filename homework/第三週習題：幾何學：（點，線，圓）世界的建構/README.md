@@ -48,6 +48,13 @@ def intersect_lines(a1, b1, c1, a2, b2, c2):
 print(f"直線交點: {intersect_lines(1, 1, 2, 1, -1, 0)}") # 預期 (1.0, 1.0)
 ```
 
+# 克拉瑪公式
+<img width="156" height="92" alt="image" src="https://github.com/user-attachments/assets/d5a067f1-98fd-4f77-9770-1db49ec11f49" />
+<img width="452" height="47" alt="image" src="https://github.com/user-attachments/assets/63ee211b-b92b-413d-8b7e-fcbcdd7f6291" />
+<img width="477" height="502" alt="image" src="https://github.com/user-attachments/assets/00aecca4-6407-4ed4-bde3-42ee336e193e" />
+<img width="504" height="108" alt="image" src="https://github.com/user-attachments/assets/12fefba4-4c13-4712-8a29-98af579ed65a" />
+
+
 
 ## 數學基礎：
 `D = A_1B_2 - A_2B_1` `D_x = C_2B_1 - C_1B_2` `D_y = A_2C_1 - A_1C_2`
