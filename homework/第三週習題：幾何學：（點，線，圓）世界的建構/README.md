@@ -26,7 +26,8 @@
 * 特性： 直線與圓有兩個交點。
 * 割線在圓內部：弦
 * 割線通過圓心：直徑
-
+## 判斷直線與圓的交點
+<img width="615" height="246" alt="image" src="https://github.com/user-attachments/assets/6ccedef2-b4b6-40d0-b59d-c63bcc8e7579" />
 
 
 
