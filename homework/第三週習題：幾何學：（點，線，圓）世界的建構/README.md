@@ -32,7 +32,8 @@
 
 
 # 兩直線交點 (Intersection of Two Lines)
-給定兩條直線：`L_1: A_1x + B_1y + C_1 = 0` & `L_2: A_2x + B_2y + C_2 = 0`
+給定兩條直線：<img width="323" height="23" alt="image" src="https://github.com/user-attachments/assets/1b08e439-6fcd-4b42-840b-d6af650cd44b" />
+
 
 這是一個二元一次聯立方程式組。我們可以利用克萊默法則 (Cramer's Rule) 或代入消去法求解 $x$ 和 $y$。
 ## 數學基礎：
