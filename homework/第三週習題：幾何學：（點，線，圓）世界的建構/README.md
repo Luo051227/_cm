@@ -62,4 +62,4 @@ print(f"直線交點: {intersect_lines(1, 1, 2, 1, -1, 0)}") # 預期 (1.0, 1.0)
 如果 D \neq 0，則交點為 (x, y) = (\frac{D_x}{D}, \frac{D_y}{D})。如果 $D = 0$：若 D_x = 0 且 D_y = 0，則兩線重合（無限多交點）。若 D_x \neq 0 或 D_y \neq 0，則兩線平行（無交點）。
 ## AI
 參考：[Gemini](https://gemini.google.com/share/7c487b510690)
-
+參考2：[Gemini](https://gemini.google.com/share/ca1dd991cd0f)
