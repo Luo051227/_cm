@@ -69,10 +69,6 @@ Pxy = [
 print("Mutual Information:", mutual_information(Pxy))
 #此為AI寫的
 ```
-## 寫程式驗證 cross_entropy(p,p) > cross_entropy(p,q), 當 q != p 時
-
-## 寫出 『7-4 漢明碼』的編碼與解碼程式
-
 ## 夏農信道編碼定理
 
 ## 夏農-哈特利定理 (Shannon–Hartley Theorem)
