@@ -80,3 +80,64 @@ $$\begin{cases}
 * 水開很小：水漏得比裝得快（靜止，收斂到一點）
 * 水開大一點：水車會開始穩定地往一個方向轉（週期性運動）
 * 水開得很大 (混沌發生)：開始加速轉動，轉太快，水來不及裝滿桶子，另一邊的空桶子轉上來接水變重了，水車會突然減速，然後倒著轉，一直持續發生
+## 混沌的誕生
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+def lorenz_system(rho_val, num_steps=3000):
+    # 標準參數
+    sigma = 10
+    beta = 8/3
+    dt = 0.01
+    
+    xs, ys, zs = np.empty(num_steps), np.empty(num_steps), np.empty(num_steps)
+    
+    # 初始起點 (微小的擾動)
+    xs[0], ys[0], zs[0] = (0.1, 1.0, 1.05)
+    
+    for i in range(num_steps - 1):
+        x, y, z = xs[i], ys[i], zs[i]
+        
+        # 羅倫茲方程組 (核心演算法)
+        dx = sigma * (y - x)
+        dy = x * (rho_val - z) - y  # <--- rho 在這裡發揮作用
+        dz = x * y - beta * z
+        
+        # 更新位置
+        xs[i+1] = x + dx * dt
+        ys[i+1] = y + dy * dt
+        zs[i+1] = z + dz * dt
+        
+    return xs, ys, zs
+
+# 設定三種不同的 Rho 值來觀察
+rhos = [14, 28, 99]
+titles = ["Stability (Rho=14)", "Chaos (Rho=28, Classic)", "High Complexity (Rho=99)"]
+colors = ['green', 'blue', 'red']
+
+fig = plt.figure(figsize=(15, 5))
+
+for i in range(3):
+    ax = fig.add_subplot(1, 3, i+1, projection='3d')
+    x, y, z = lorenz_system(rhos[i])
+    
+    ax.plot(x, y, z, lw=0.6, c=colors[i])
+    ax.set_title(titles[i])
+    
+    # 標記最後停在哪裡 (如果是穩定的，就會看到終點)
+    ax.scatter(x[-1], y[-1], z[-1], c='black', s=20, label='End')
+    ax.set_xlabel("X")
+    ax.set_ylabel("Y")
+    ax.set_zlabel("Z")
+
+plt.tight_layout()
+plt.show()
+```
+* $\rho = 14$： 熱度不夠，對流會慢慢穩定下來（螺旋收斂到一個點）  
+  `會看到線條繞了幾圈後，最後吸入並停在某個黑點上。這代表天氣很穩定，不管怎樣最後都會變成那個樣子`
+* $\rho = 28$： 經典的羅倫茲蝴蝶（永遠繞圈圈）  
+  `線條永遠不會停下來，形成完美的蝴蝶。這就是我們真實世界的「天氣」`
+* $\rho = 99$： 超級加熱，蝴蝶變成了一團亂麻（更複雜的混沌）  
+  `雖然還是在繞圈，但範圍變得更大、切換頻率更快，像是躁動的蝴蝶`  
+**只要改變一個參數，整個系統的行為模式，可能會從「穩定」瞬間變成「混沌」**
