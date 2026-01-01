@@ -14,6 +14,7 @@ p=0.5
 print(10000*math.log10(p))
 ```
 ## 寫程式計算『熵，交叉熵，KL 散度，互熵（互資訊）』
+**熵**
 ```python
 import numpy as np
 
@@ -22,10 +23,13 @@ p=np.array(a)
 
 print(-np.sum(p * np.log2(p)))
 ```
+**交叉熵**
 ```python
 ```
+**KL 散度**
 ```python
 ```
+**互熵（互資訊）**
 ```python
 ```
 ## 寫程式驗證 cross_entropy(p,p) > cross_entropy(p,q), 當 q != p 時
