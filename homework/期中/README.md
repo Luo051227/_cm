@@ -59,9 +59,11 @@ ax.legend()
 plt.show()
 ```
 ## 數學原理
-
 $$\begin{cases}
 \frac{dx}{dt} = \sigma (y - x) \\
 \frac{dy}{dt} = x (\rho - z) - y \\
 \frac{dz}{dt} = xy - \beta z
 \end{cases}$$
+* $x$ (流速)： 對流翻滾的速度。正數代表順時針轉，負數代表逆時針轉
+* $y$ (溫差)： 上升流和下降流之間的溫度差異
+* $z$ (垂直溫度的扭曲)： 熱氣團偏離垂直方向的程度
