@@ -293,7 +293,7 @@ $\rightarrow$ 每台車可以載 8 個 bits (256-QAM)
 公式中 $\log_2(1 + S/N)$ 的由來：
 功率 ($S$) 必須呈指數級增加，才能換取容量 ($C$) 的線性微幅增加  
 [作業](https://github.com/Luo051227/_cm/tree/main/homework/%E7%AC%AC%E4%B9%9D%E5%91%A8%E7%BF%92%E9%A1%8C%EF%BC%9A%E8%B3%87%E8%A8%8A%E7%90%86%E8%AB%96)
-[AI]()
+[AI](https://gemini.google.com/share/4569a8c5f859)
 # 第十周習題：線性代數
 [作業](https://github.com/Luo051227/_cm/tree/main/homework/%E7%AC%AC%E5%8D%81%E5%91%A8%E7%BF%92%E9%A1%8C%EF%BC%9A%E7%B7%9A%E6%80%A7%E4%BB%A3%E6%95%B8)
 [AI]()
