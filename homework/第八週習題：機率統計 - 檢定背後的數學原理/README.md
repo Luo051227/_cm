@@ -20,8 +20,12 @@ Z 值其實就是一把標準尺。它把「分數」、「公分」、「公斤
 <img width="632" height="581" alt="image" src="https://github.com/user-attachments/assets/b529df0b-b5c9-484d-84ff-6231d414ff0b" />
 
 ## T 檢定 (One-Sample T-Test)
+**單樣本 T 檢定 (One-Sample T-Test)**
+情境：你有一組樣本，想知道它是否來自某個特定平均值 $\mu_0$ 的母體，但你不知道母體的 $\sigma$ 
 <img width="731" height="426" alt="image" src="https://github.com/user-attachments/assets/e0fbc461-75eb-4365-968b-9a3c71d4dced" />
 
-
+**雙樣本獨立 T 檢定 (Independent Two-Sample T-Test)**
+情境：兩組完全不相干的人（例如：實驗組吃藥，對照組吃糖），比較兩組平均值是否有差異。假設兩組變異數相等（Homogeneity of Variance）
+變異數的可加性：即使我們是將兩組數據相減，它們的不確定性（變異數）卻是相加的（因為兩組獨立，隨機誤差會疊加）：$$Var(\bar{X}_1 - \bar{X}_2) = Var(\bar{X}_1) + Var(\bar{X}_2) = \frac{\sigma^2}{n_1} + \frac{\sigma^2}{n_2}$$
 
 [AI]()
