@@ -16,6 +16,7 @@
 
 **Z 值 (The Z-Score)** 
 Z 值其實就是一把標準尺。它把「分數」、「公分」、「公斤」這些單位全部拿掉，轉換成 **「標準差倍數」** 
+
 <img width="632" height="581" alt="image" src="https://github.com/user-attachments/assets/b529df0b-b5c9-484d-84ff-6231d414ff0b" />
 
 
