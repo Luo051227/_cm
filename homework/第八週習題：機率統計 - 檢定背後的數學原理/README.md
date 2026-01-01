@@ -19,6 +19,7 @@ Z 值其實就是一把標準尺。它把「分數」、「公分」、「公斤
 
 <img width="632" height="581" alt="image" src="https://github.com/user-attachments/assets/b529df0b-b5c9-484d-84ff-6231d414ff0b" />
 
-
+## T 檢定 (One-Sample T-Test)
+樣本標準差 (Bessel's Correction)：為了不低估母體的變異，分母必須是 $n-1$（自由度）：$$S = \sqrt{\frac{\sum (X_i - \bar{X})^2}{n-1}}$$
 
 [AI]()
