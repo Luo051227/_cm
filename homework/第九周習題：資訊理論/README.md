@@ -78,6 +78,7 @@ print("Mutual Information:", mutual_information(Pxy))
 我們希望每使用一次通道傳輸 $R$ bits 的資訊。若碼長為 $n$，資訊位元為 $k$，則 $R = \frac{k}{n}$  
 ### 定理陳述
 <img width="738" height="229" alt="image" src="https://github.com/user-attachments/assets/97b53963-fc03-4d11-b373-83bad5b8ba81" />    
+
 ### 例子
 **定理的第一部分：只要夠囉唆，就不會出錯**    
  * 方法 A（無編碼，講太快）： 你只說一次：「炒飯！」 結果：因為旁邊有人摔盤子，服務生聽成「炒蛋」。 --> 失敗。  
