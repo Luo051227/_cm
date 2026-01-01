@@ -38,8 +38,8 @@ Z 值其實就是一把標準尺。它把「分數」、「公分」、「公斤
 * **轉化為單樣本檢定**：現在我們只需要檢驗 $D$ 這個新樣本的平均值 $\bar{D}$ 是否顯著不為 0。
 <img width="119" height="63" alt="image" src="https://github.com/user-attachments/assets/1c18796b-5674-414c-bd40-8d420415cc83" />
 
-   * $S_D$ 是差值樣本 $D$ 的標準差
-   * $df = n - 1$
+    $S_D$ 是差值樣本 $D$ 的標準差
+    $df = n - 1$
 
 
 [AI]()
