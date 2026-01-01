@@ -14,7 +14,20 @@ p=0.5
 print(10000*math.log10(p))
 ```
 ## 寫程式計算『熵，交叉熵，KL 散度，互熵（互資訊）』
+```python
+import numpy as np
 
+a=[0.5, 0.25, 0.25]
+p=np.array(a)
+
+print(-np.sum(p * np.log2(p)))
+```
+```python
+```
+```python
+```
+```python
+```
 ## 寫程式驗證 cross_entropy(p,p) > cross_entropy(p,q), 當 q != p 時
 
 ## 寫出 『7-4 漢明碼』的編碼與解碼程式
