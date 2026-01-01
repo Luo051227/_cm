@@ -25,6 +25,14 @@ print(-np.sum(p * np.log2(p)))
 ```
 **交叉熵**
 ```python
+import numpy as np
+
+a=[0.5, 0.25, 0.25]
+b=[0.6, 0.2, 0.2]
+p=np.array(a)
+q=np.array(b)
+
+print(-np.sum(p * np.log2(q)))
 ```
 **KL 散度**
 ```python
