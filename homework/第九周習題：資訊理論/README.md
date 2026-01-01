@@ -7,7 +7,12 @@ print(a**10000)
 ```
 
 ## 寫另一個程式，用 log(p^n) = n log(p) 計算 log(p^n)，然後代入 p=0.5，算出 log(0.5^10000)
+```python
+import math
 
+p=0.5
+print(10000*math.log10(p))
+```
 ## 寫程式計算『熵，交叉熵，KL 散度，互熵（互資訊）』
 
 ## 寫程式驗證 cross_entropy(p,p) > cross_entropy(p,q), 當 q != p 時
