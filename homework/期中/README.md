@@ -58,3 +58,10 @@ ax.set_title("Lorenz Attractor: The Butterfly Effect")
 ax.legend()
 plt.show()
 ```
+## 數學原理
+
+$$\begin{cases}
+\frac{dx}{dt} = \sigma (y - x) \\
+\frac{dy}{dt} = x (\rho - z) - y \\
+\frac{dz}{dt} = xy - \beta z
+\end{cases}$$
