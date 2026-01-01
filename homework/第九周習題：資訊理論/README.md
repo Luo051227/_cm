@@ -133,7 +133,7 @@ $\rightarrow$ 每台車只能載 1 個 bit (BPSK)。
 「三分亮」= 01
 「沒光」= 00
 $\rightarrow$ 每台車可以載 2 個 bits (QPSK)。
-  * 極高 SNR (超高清)：
+   * 極高 SNR (超高清)：
 你可以把光線分成 256 種亮度等級，接收端都能分得出來！
 $\rightarrow$ 每台車可以載 8 個 bits (256-QAM)
 
