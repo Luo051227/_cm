@@ -73,7 +73,7 @@ print("Mutual Information:", mutual_information(Pxy))
 `由克勞德·夏農（Claude Shannon）於 1948 年提出`  
 **夏農信道編碼定理（Shannon's Channel Coding Theorem）**，又稱為**有噪信道編碼定理**。它劃定了一條通信的物理極限，告訴我們：「在雜訊干擾的通道中，我們最大能以多快的速度進行『無錯誤』傳輸。」  
 ### 核心定義
-通道容量 (Channel Capacity, $C$)：通道傳輸資訊的最大能力，定義為輸入與輸出之間的**互資訊（Mutual Information**的最大值：```$$C = \max_{P(X)} I(X; Y) \quad \text{(bits/channel use)}$$```  
+通道容量 (Channel Capacity, $C$)：通道傳輸資訊的最大能力，定義為輸入與輸出之間的**互資訊（Mutual Information**的最大值：$$C = \max_{P(X)} I(X; Y) \quad \text{(bits/channel use)}$$  
 傳輸速率 (Rate, $R$)：
 我們希望每使用一次通道傳輸 $R$ bits 的資訊。若碼長為 $n$，資訊位元為 $k$，則 $R = \frac{k}{n}$  
 ### 定理陳述
