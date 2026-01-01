@@ -36,9 +36,38 @@ print(-np.sum(p * np.log2(q)))
 ```
 **KL 散度**
 ```python
+import numpy as np
+
+a=[0.5, 0.25, 0.25]
+b=[0.6, 0.2, 0.2]
+p=np.array(a)
+q=np.array(b)
+
+print(np.sum(p * np.log2(p/q)))
 ```
 **互熵（互資訊）**
 ```python
+import numpy as np
+
+def mutual_information(joint):
+    joint = np.array(joint)
+    px = np.sum(joint, axis=1)
+    py = np.sum(joint, axis=0)
+
+    mi = 0.0
+    for i in range(joint.shape[0]):
+        for j in range(joint.shape[1]):
+            if joint[i, j] > 0:
+                mi += joint[i, j] * np.log2(joint[i, j] / (px[i] * py[j]))
+    return mi
+# 聯合機率表 p(x,y)
+Pxy = [
+    [0.25, 0.25],
+    [0.25, 0.25]
+]
+
+print("Mutual Information:", mutual_information(Pxy))
+#此為AI寫的
 ```
 ## 寫程式驗證 cross_entropy(p,p) > cross_entropy(p,q), 當 q != p 時
 
