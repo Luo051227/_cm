@@ -24,20 +24,20 @@
 [作業](https://github.com/Luo051227/_cm/tree/main/homework/%E7%AC%AC%E4%BA%8C%E9%80%B1%E7%BF%92%E9%A1%8C%EF%BC%9A%E6%9C%89%E9%99%90%E9%AB%94)
 [AI](https://chatgpt.com/share/6924476a-fd44-8012-a7be-87cdaada71f6)
 # 第三週習題：幾何學：（點，線，圓）世界的建構
-# 點 (Point)
+## 點 (Point)
 `定義為只有位置、沒有大小（寬度、長度和高度）`  
 * 點是零維的幾何實體
 * 通常用大寫英文字母（如 A, B, P）表示  
 
 兩點間距離公式：d = √{(x_2-x_1)^2 + (y_2-y_1)^2}
 
-# 直線 (Line)
+## 直線 (Line)
 直線是一維的、無限延伸的、由無數點組成的集合。  
 
 一般式 (Standard Form)：` Ax + By + C = 0，其中 A 和 B 不全為零。`  
 
 斜截式 (Slope-intercept Form)：`y = mx + b，其中 m 是斜率，b 是 y 軸截距。`  
-# 圓 (Circle)
+## 圓 (Circle)
 圓是在平面上，到固定點（圓心）距離為定值（半徑）的所有點的集合。  
 圓標準式 (Standard Form)：<img width="300" height="75" alt="image" src="https://github.com/user-attachments/assets/9f132c8b-9053-499b-8fcd-e273087eb16a" />`，其中 (h, k) 是圓心，r 是半徑。`  
 <img width="200" height="113" alt="image" src="https://github.com/user-attachments/assets/f39e5012-3e18-473e-8021-e4f8d57d07d5" />  
@@ -52,12 +52,12 @@
 * 特性： 直線與圓有兩個交點。
 * 割線在圓內部：弦
 * 割線通過圓心：直徑
-## 判斷直線與圓的交點
+### 判斷直線與圓的交點
 <img width="615" height="246" alt="image" src="https://github.com/user-attachments/assets/6ccedef2-b4b6-40d0-b59d-c63bcc8e7579" />
 
 
 
-# 兩直線交點 (Intersection of Two Lines)
+## 兩直線交點 (Intersection of Two Lines)
 兩條直線可以用一般式表示：<img width="323" height="23" alt="image" src="https://github.com/user-attachments/assets/1b08e439-6fcd-4b42-840b-d6af650cd44b" />
 ```python
 def intersect_lines(a1, b1, c1, a2, b2, c2):
@@ -74,7 +74,7 @@ def intersect_lines(a1, b1, c1, a2, b2, c2):
 print(f"直線交點: {intersect_lines(1, 1, 2, 1, -1, 0)}") # 預期 (1.0, 1.0)
 ```
 
-# 克拉瑪公式
+## 克拉瑪公式
 <img width="156" height="92" alt="image" src="https://github.com/user-attachments/assets/d5a067f1-98fd-4f77-9770-1db49ec11f49" />
 <img width="452" height="47" alt="image" src="https://github.com/user-attachments/assets/63ee211b-b92b-413d-8b7e-fcbcdd7f6291" />
 <img width="477" height="502" alt="image" src="https://github.com/user-attachments/assets/00aecca4-6407-4ed4-bde3-42ee336e193e" />
@@ -82,7 +82,7 @@ print(f"直線交點: {intersect_lines(1, 1, 2, 1, -1, 0)}") # 預期 (1.0, 1.0)
 
 
 
-## 數學基礎：
+### 數學基礎：
 `D = A_1B_2 - A_2B_1` `D_x = C_2B_1 - C_1B_2` `D_y = A_2C_1 - A_1C_2`
 
 如果 D \neq 0，則交點為 (x, y) = (\frac{D_x}{D}, \frac{D_y}{D})。如果 $D = 0$：若 D_x = 0 且 D_y = 0，則兩線重合（無限多交點）。若 D_x \neq 0 或 D_y \neq 0，則兩線平行（無交點）。  
@@ -104,19 +104,19 @@ print(f"直線交點: {intersect_lines(1, 1, 2, 1, -1, 0)}") # 預期 (1.0, 1.0)
 [作業](https://github.com/Luo051227/_cm/tree/main/homework/%E7%AC%AC13%E5%91%A8%E7%BF%92%E9%A1%8C%EF%BC%9A%E8%AB%8B%E5%AF%AB%E7%A8%8B%E5%BC%8F%E6%B1%82%E8%A7%A3%E5%B8%B8%E4%BF%82%E6%95%B8%E9%BD%8A%E6%AC%A1%E5%B8%B8%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B)
 [AI]()
 # 期中
-# 羅倫茲吸引子 (Lorenz Attractor)
-## 由來
+## 羅倫茲吸引子 (Lorenz Attractor)
+### 由來
 1963 年，氣象學家 愛德華·羅倫茲 (Edward Lorenz) 用電腦模擬天氣。方程式很簡單，他有一天想把運算結果重跑一遍。
 
 為了省時間，他沒有輸入完整的數據 `0.506127`，而是四捨五入輸入了 `0.506`。他以為這 `0.000127` 的微小差距應該沒影響。
 
 結果去喝杯咖啡回來，發現兩次模擬出來的天氣完全不同！ 一個是大晴天，一個是暴風雨。
-## 圖形
+### 圖形
 `羅倫茲將這三個變數（代表氣溫、氣壓、氣流等）畫在 3D 空間中`
 * 不會重複： 這條線繞了幾萬圈，永遠不會跟之前的路徑重疊
 * 有範圍但無規律： 它永遠不會跑出這個「蝴蝶翅膀」的範圍（所以叫「吸引子」，把軌跡吸住），但你永遠不知道它下一秒會飛到左邊翅膀還是右邊翅膀
 * 混沌 (Chaos)： 它不是亂數，它有公式，但結果卻無法預測
-## 蝴蝶效應python
+### 蝴蝶效應python
 * 藍色點： 從 `(0, 1, 1.05)` 出發
 * 黃色點： 從 `(0, 1, 1.05 + 0.01)` 出發
 ```python
@@ -164,7 +164,7 @@ ax.set_title("Lorenz Attractor: The Butterfly Effect")
 ax.legend()
 plt.show()
 ```
-## 數學原理
+### 數學原理
 $$\begin{cases}
 \frac{dx}{dt} = \sigma (y - x) \\
 \frac{dy}{dt} = x (\rho - z) - y \\
@@ -183,12 +183,12 @@ $$\begin{cases}
   * 火開很大 ($\rho = 28$)：`混沌出現`
 * $\beta$ (Beta, 幾何因子)： 與容器的寬高比有關
 
-### 假設
+#### 假設
 **漏水的水車**
 * 水開很小：水漏得比裝得快（靜止，收斂到一點）
 * 水開大一點：水車會開始穩定地往一個方向轉（週期性運動）
 * 水開得很大 (混沌發生)：開始加速轉動，轉太快，水來不及裝滿桶子，另一邊的空桶子轉上來接水變重了，水車會突然減速，然後倒著轉，一直持續發生
-## 混沌的誕生
+### 混沌的誕生
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
