@@ -99,3 +99,15 @@ print("Mutual Information:", mutual_information(Pxy))
 
 **在吵雜的世界裡，只要你講得夠慢、廢話（檢查碼）夠多，就一定能把話講清楚；但如果你想講得比『物理極限』還快，那神仙也救不了你。**
 ## 夏農-哈特利定理 (Shannon–Hartley Theorem)
+夏農-哈特利定理 (Shannon-Hartley Theorem) 描述了在高斯白雜訊 (AWGN) 通道中，資訊傳輸速率的物理上限：$$C = B \log_2 \left( 1 + \frac{S}{N} \right)$$
+
+**變數定義：**
+1. C (Channel Capacity)：
+通道容量，單位是 位元每秒 (bps)。這是理論上的最高速度
+2. B (Bandwidth)：
+頻寬，單位是 赫茲 (Hz)。代表你佔用的頻譜寬度（路有多寬）
+3. S/N (Signal-to-Noise Ratio, SNR)：訊雜比。
+   S：訊號的平均功率 (Watt)
+   N：雜訊的平均功率 (Watt)
+   **注意：** 公式裡的 S/N 是線性倍數，但工程上常給 分貝 (dB)，計算前必須轉換
+
