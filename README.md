@@ -33,13 +33,13 @@
 [作業](https://github.com/Luo051227/_cm/tree/main/homework/%E7%AC%AC%E4%B9%9D%E5%91%A8%E7%BF%92%E9%A1%8C%EF%BC%9A%E8%B3%87%E8%A8%8A%E7%90%86%E8%AB%96)
 [AI]()
 # 第十周習題：線性代數
-[作業]()
+[作業](https://github.com/Luo051227/_cm/tree/main/homework/%E7%AC%AC%E5%8D%81%E5%91%A8%E7%BF%92%E9%A1%8C%EF%BC%9A%E7%B7%9A%E6%80%A7%E4%BB%A3%E6%95%B8)
 [AI]()
 # 第11周習題：請寫出傅立葉正轉換和逆轉換的函數（不要用套件）
-[作業]()
+[作業](https://github.com/Luo051227/_cm/tree/main/homework/%E7%AC%AC11%E5%91%A8%E7%BF%92%E9%A1%8C%EF%BC%9A%E8%AB%8B%E5%AF%AB%E5%87%BA%E5%82%85%E7%AB%8B%E8%91%89%E6%AD%A3%E8%BD%89%E6%8F%9B%E5%92%8C%E9%80%86%E8%BD%89%E6%8F%9B%E7%9A%84%E5%87%BD%E6%95%B8%EF%BC%88%E4%B8%8D%E8%A6%81%E7%94%A8%E5%A5%97%E4%BB%B6%EF%BC%89)
 [AI]()
 # 第13周習題：請寫程式求解常係數齊次常微分方程
-[作業]()
+[作業](https://github.com/Luo051227/_cm/tree/main/homework/%E7%AC%AC13%E5%91%A8%E7%BF%92%E9%A1%8C%EF%BC%9A%E8%AB%8B%E5%AF%AB%E7%A8%8B%E5%BC%8F%E6%B1%82%E8%A7%A3%E5%B8%B8%E4%BF%82%E6%95%B8%E9%BD%8A%E6%AC%A1%E5%B8%B8%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B)
 [AI]()
 # 期中
 [作業](https://github.com/Luo051227/_cm/tree/main/homework/%E6%9C%9F%E4%B8%AD)
