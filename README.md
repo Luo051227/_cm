@@ -83,7 +83,7 @@ print(f"直線交點: {intersect_lines(1, 1, 2, 1, -1, 0)}") # 預期 (1.0, 1.0)
 
 
 ### 數學基礎：
-`D = A_1B_2 - A_2B_1` `D_x = C_2B_1 - C_1B_2` `D_y = A_2C_1 - A_1C_2`
+```D = A_1B_2 - A_2B_1` `D_x = C_2B_1 - C_1B_2` `D_y = A_2C_1 - A_1C_2```
 
 如果 D \neq 0，則交點為 (x, y) = (\frac{D_x}{D}, \frac{D_y}{D})。如果 $D = 0$：若 D_x = 0 且 D_y = 0，則兩線重合（無限多交點）。若 D_x \neq 0 或 D_y \neq 0，則兩線平行（無交點）。  
 [作業](https://github.com/Luo051227/_cm/tree/main/homework/%E7%AC%AC%E4%B8%89%E9%80%B1%E7%BF%92%E9%A1%8C%EF%BC%9A%E5%B9%BE%E4%BD%95%E5%AD%B8%EF%BC%9A%EF%BC%88%E9%BB%9E%EF%BC%8C%E7%B7%9A%EF%BC%8C%E5%9C%93%EF%BC%89%E4%B8%96%E7%95%8C%E7%9A%84%E5%BB%BA%E6%A7%8B)
