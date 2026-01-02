@@ -1,3 +1,5 @@
+import numpy as np
+
 def det(A):
     n = len(A)
 
