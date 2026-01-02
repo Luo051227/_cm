@@ -89,4 +89,15 @@
 
 <img width="596" height="312" alt="image" src="https://github.com/user-attachments/assets/de76f637-c799-44e5-b1d8-528f31d54047" />
 
+<img width="514" height="372" alt="image" src="https://github.com/user-attachments/assets/474c3466-9b3a-4c05-b328-88285d1a66c1" />
+
+### 3D
+
+在 3D 空間中，我們使用 $4 \times 4$ 矩陣作用於齊次座標 $\begin{bmatrix} x \\ y \\ z \\ 1 \end{bmatrix}$ 上
+
+<img width="465" height="419" alt="image" src="https://github.com/user-attachments/assets/e82061f5-8764-47fb-8847-2ea376fef91c" />
+
+<img width="732" height="586" alt="image" src="https://github.com/user-attachments/assets/50efd18e-0f72-43ed-80b0-c5263c33117b" />
+
+
 
