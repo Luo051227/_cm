@@ -56,11 +56,18 @@
 
 矩陣與向量的關係在於： **矩陣作用於向量，使向量發生移動、旋轉或變形**
 
-幾何意義：
-空間的變換 (Linear Transformation)這是理解矩陣最直觀的方式。矩陣 $\mathbf{A}$ 是一個函數，它吃進一個向量 $\mathbf{x}$，吐出一個新向量 $\mathbf{y}$。 $$\mathbf{y} = f(\mathbf{x}) = \mathbf{A}\mathbf{x} $$這個「變換」包含了：旋轉 (Rotation)縮放 (Scaling)剪切 (Shear)投影 (Projection)
+**幾何意義：空間的變換 (Linear Transformation)** 
 
-代數意義：
-聯立方程式 (System of Equations)矩陣是解方程組的工具。 
+這是理解矩陣最直觀的方式。矩陣 $\mathbf{A}$ 是一個函數，它吃進一個向量 $\mathbf{x}$，吐出一個新向量 $\mathbf{y}$。 $$\mathbf{y} = f(\mathbf{x}) = \mathbf{A}\mathbf{x} $$這個「變換」包含了：旋轉 (Rotation)縮放 (Scaling)剪切 (Shear)投影 (Projection)
+
+**代數意義：聯立方程式 (System of Equations)** 
+
+矩陣是解方程組的工具。 
 <img width="784" height="162" alt="image" src="https://github.com/user-attachments/assets/6ceca15f-c3be-4292-aa68-cc468dc1b139" />
 
 矩陣 $\mathbf{A}$ 代表系統的結構，向量 $\mathbf{x}$ 是未知數，向量 $\mathbf{b}$ 是結果
+
+**數據意義：張量 (Tensor)**
+
+在電腦科學（如機器學習）中，矩陣是 2D 張量。 $$\mathbf{X} \in \mathbb{R}^{m \times n}$$ 例如：一張 $100 \times 100$ 的黑白照片，就是一個矩陣，每個數值代表像素亮度。這裡的矩陣不代表運動，只代表靜態資訊
+
