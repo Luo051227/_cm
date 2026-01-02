@@ -45,7 +45,7 @@
 
 給定 $\mathbb{R}^n$ 的一個子集 $W$：
 
-1. 零向量存在：$\mathbf{0} \in W$。（空間必須包含原點，這是基準點）
+1. 零向量存在： $\mathbf{0} \in W$。（空間必須包含原點，這是基準點）
 2. 加法封閉：若 $\mathbf{u}, \mathbf{v} \in W$，則 $\mathbf{u} + \mathbf{v} \in W$
 3. 數乘封閉：若 $\mathbf{u} \in W, c \in \mathbb{R}$，則 $c\mathbf{u} \in W$
 
