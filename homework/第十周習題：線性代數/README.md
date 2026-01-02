@@ -41,3 +41,11 @@
 * 加法封閉性：你在空間裡隨便找兩個點 $\mathbf{u}, \mathbf{v}$，把它們加起來 $\mathbf{u}+\mathbf{v}$，結果一定還在這個空間裡
 * 數乘封閉性：你在空間裡隨便找個點 $\mathbf{u}$，把它放大縮小 $c$ 倍 $c\mathbf{u}$，結果也一定還在這個空間裡
 
+**子空間測試法**
+
+給定 $\mathbb{R}^n$ 的一個子集 $W$：
+
+1. 零向量存在：$\mathbf{0} \in W$。（空間必須包含原點，這是基準點）
+2. 加法封閉：若 $\mathbf{u}, \mathbf{v} \in W$，則 $\mathbf{u} + \mathbf{v} \in W$
+3. 數乘封閉：若 $\mathbf{u} \in W, c \in \mathbb{R}$，則 $c\mathbf{u} \in W$
+
