@@ -12,3 +12,4 @@
 
 兩者合併，即為線性組合 (Linear Combination) 的保存： $$L(c_1 u + c_2 v) = c_1 L(u) + c_2 L(v)$$
 
+直線方程式 $y = mx + b$ (若 $b \neq 0$) 在線性代數中不是線性變換，因為它不滿足 $L(0) = 0$（原點必須映射到原點）。這被稱為「仿射變換 (Affine Transformation)」
