@@ -458,8 +458,123 @@ $\rightarrow$ 每台車可以載 8 個 bits (256-QAM)
 2. 加法封閉：若 $\mathbf{u}, \mathbf{v} \in W$，則 $\mathbf{u} + \mathbf{v} \in W$
 3. 數乘封閉：若 $\mathbf{u} \in W, c \in \mathbb{R}$，則 $c\mathbf{u} \in W$
 
+## 矩陣和向量之間有何關係？矩陣代表的意義是什麼？
+
+* **向量 (Vector) 是名詞**：它代表狀態、數據、或是空間中的一個點
+* **矩陣 (Matrix) 是動詞**：它代表一種運動或變換（Transformation）
+
+矩陣與向量的關係在於： **矩陣作用於向量，使向量發生移動、旋轉或變形**
+
+**幾何意義：空間的變換 (Linear Transformation)** 
+
+這是理解矩陣最直觀的方式。矩陣 $\mathbf{A}$ 是一個函數，它吃進一個向量 $\mathbf{x}$，吐出一個新向量 $\mathbf{y}$。 $$\mathbf{y} = f(\mathbf{x}) = \mathbf{A}\mathbf{x} $$這個「變換」包含了：旋轉 (Rotation)縮放 (Scaling)剪切 (Shear)投影 (Projection)
+
+**代數意義：聯立方程式 (System of Equations)** 
+
+矩陣是解方程組的工具。 
+<img width="784" height="162" alt="image" src="https://github.com/user-attachments/assets/6ceca15f-c3be-4292-aa68-cc468dc1b139" />
+
+矩陣 $\mathbf{A}$ 代表系統的結構，向量 $\mathbf{x}$ 是未知數，向量 $\mathbf{b}$ 是結果
+
+**數據意義：張量 (Tensor)**
+
+在電腦科學（如機器學習）中，矩陣是 2D 張量。 $$\mathbf{X} \in \mathbb{R}^{m \times n}$$ 例如：一張 $100 \times 100$ 的黑白照片，就是一個矩陣，每個數值代表像素亮度。這裡的矩陣不代表運動，只代表靜態資訊
+
+## 如何用矩陣代表 2D / 3D 幾何學中的『平移，縮放，旋轉』操作？
+
+要用矩陣統一表示這三種操作，我們必須引入一個關鍵概念：齊次座標 (Homogeneous Coordinates)
+
+**為什麼需要「齊次座標」？**  
+
+矩陣乘法 $\mathbf{A}\mathbf{x}$ 只能表示「線性變換」（變換後原點必須保持在原點）
+* 縮放 (Scaling)：是線性的。 $S(\mathbf{0}) = \mathbf{0}$
+* 旋轉 (Rotation)：是線性的。繞原點旋轉，原點不動
+* 平移 (Translation)：不是線性的。 $T(\mathbf{x}) = \mathbf{x} + \mathbf{t}$，當 $\mathbf{x}=\mathbf{0}$ 時，結果是    $\mathbf{t}$，原點移動了
+
+<img width="431" height="217" alt="image" src="https://github.com/user-attachments/assets/90308b1f-bca4-4d4e-9aac-18efbad2de80" />
+
+### 2D
+1. 平移 (Translation)
+
+<img width="596" height="312" alt="image" src="https://github.com/user-attachments/assets/de76f637-c799-44e5-b1d8-528f31d54047" />
+
+<img width="514" height="372" alt="image" src="https://github.com/user-attachments/assets/474c3466-9b3a-4c05-b328-88285d1a66c1" />
+
+### 3D
+
+<img width="598" height="553" alt="image" src="https://github.com/user-attachments/assets/ab760d28-00a1-4104-871e-5723574027f0" />
+
+
+<img width="732" height="586" alt="image" src="https://github.com/user-attachments/assets/50efd18e-0f72-43ed-80b0-c5263c33117b" />
+
+## 行列式的意義是什麼？如何用遞迴公式計算矩陣的行列式？行列式和體積有什麼關係？如何透過對角化快速計算行列式 如何用 LU 分解快速計算行列式
+**行列式 (Determinant) 是矩陣變換對空間體積的「縮放倍率」**  
+
+### 幾何與代數的結合
+**幾何意義：體積的縮放 (Volume Scaling Factor)**  
+2D 空間：
+想像一個邊長為 1 的正方形（面積 = 1）。
+經過矩陣 $\mathbf{A} = [\mathbf{u}, \mathbf{v}]$ 變換後，這個正方形變成了一個平行四邊形。  
+
+$$|\det(\mathbf{A})| = \text{平行四邊形的面積}$$  
+3D 空間： 想像一個邊長為 1 的正立方體（體積 = 1）。 經過矩陣變換後，它變成了一個平行六面體  
+$$|\det(\mathbf{A})| = \text{平行六面體的體積}$$  
+
+**符號的意義：定向 (Orientation)**
+
+正號 ($+$)：空間的「定向」保持不變（例如：右手座標系變換後還是右手系） 
+
+負號 ($-$)：空間被「翻面」了（像鏡像反射，右手系變成了左手系）  
+
+**數值為 0 的意義：降維 (Dimensional Collapse)**  
+
+若 $\det(\mathbf{A}) = 0$，代表體積變成了 0  
+
+矩陣是不可逆的 (Non-invertible / Singular)  
+
+
+**定義與遞迴關係**
+
+$$\det(\mathbf{A}) = \sum_{j=1}^{n} (-1)^{1+j} \cdot a_{1j} \cdot \det(\mathbf{M}_{1j})$$ 
+
+* $a_{1j}$：矩陣第一列第 $j$ 行的元素
+* $(-1)^{1+j}$：符號項，呈現棋盤式交替 $(+, -, +, - \dots)$
+* $\mathbf{M}_{1j}$ (Minor Matrix)：子矩陣。指將 $\mathbf{A}$ 的「第 1 列」與「第 $j$ 行」刪除後，剩下來的 $(n-1) \times (n-1)$ 矩陣
+
+<img width="329" height="116" alt="image" src="https://github.com/user-attachments/assets/30c03d98-c484-4968-8284-85bcfa15644f" />
+
+### 對角化快速計算行列式
+若矩陣 $\mathbf{A}$ 是可對角化的，則存在一個可逆矩陣 $\mathbf{P}$ 和一個對角矩陣 $\mathbf{D}$，使得： $$\mathbf{A} = \mathbf{P} \mathbf{D} \mathbf{P}^{-1}$$
+
+* $\mathbf{D}$ 的對角線元素是對應的特徵值 (Eigenvalues) $\lambda_1, \lambda_2, \dots, \lambda_n$
+* $\mathbf{P}$ 的行向量是對應的特徵向量 (Eigenvectors)
+
+乘法分配律 $\det(\mathbf{XY}) = \det(\mathbf{X})\det(\mathbf{Y})$ 與反矩陣性質 $\det(\mathbf{P}^{-1}) = \frac{1}{\det(\mathbf{P})}$
+
+<img width="529" height="369" alt="image" src="https://github.com/user-attachments/assets/13aed96a-e18a-4fba-bbb0-13c4b1d44489" />
+
+### LU 分解
+
+**定義**
+
+$$\mathbf{A} = \mathbf{L} \mathbf{U}$$
+
+<img width="637" height="279" alt="image" src="https://github.com/user-attachments/assets/5a998238-e593-464f-bc0f-7f5247cf702c" />
+
+**計算原理 (Doolittle Algorithm)**  
+LU 分解本質上就是高斯消去法 (Gaussian Elimination) 的記錄過程  
+ $Row_i \leftarrow Row_i - \alpha \cdot Row_k$ 把矩陣變為上三角（$\mathbf{U}$）時，那個乘數 $\alpha$ 實際上就是 $\mathbf{L}$ 矩陣中對應位置 $(\ell_{ik})$ 的元素  
+
+**應用：解方程式**
+
+一旦有了 $\mathbf{L}$ 和 $\mathbf{U}$，求解 $\mathbf{Ax} = \mathbf{b}$ 變成了兩個簡單步驟：
+
+* 前向代入 (Forward Substitution)：解 $\mathbf{Ly} = \mathbf{b}$ 求 $\mathbf{y}$
+* 後向代入 (Backward Substitution)：解 $\mathbf{Ux} = \mathbf{y}$ 求 $\mathbf{x}$
+
+
 [作業](https://github.com/Luo051227/_cm/tree/main/homework/%E7%AC%AC%E5%8D%81%E5%91%A8%E7%BF%92%E9%A1%8C%EF%BC%9A%E7%B7%9A%E6%80%A7%E4%BB%A3%E6%95%B8)
-[AI]()
+[AI](https://gemini.google.com/share/1939c39c4616)
 # 第11周習題：請寫出傅立葉正轉換和逆轉換的函數（不要用套件）
 [作業](https://github.com/Luo051227/_cm/tree/main/homework/%E7%AC%AC11%E5%91%A8%E7%BF%92%E9%A1%8C%EF%BC%9A%E8%AB%8B%E5%AF%AB%E5%87%BA%E5%82%85%E7%AB%8B%E8%91%89%E6%AD%A3%E8%BD%89%E6%8F%9B%E5%92%8C%E9%80%86%E8%BD%89%E6%8F%9B%E7%9A%84%E5%87%BD%E6%95%B8%EF%BC%88%E4%B8%8D%E8%A6%81%E7%94%A8%E5%A5%97%E4%BB%B6%EF%BC%89)
 [AI]()
