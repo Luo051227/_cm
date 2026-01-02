@@ -82,9 +82,14 @@
 * 旋轉 (Rotation)：是線性的。繞原點旋轉，原點不動
 * 平移 (Translation)：不是線性的。 $T(\mathbf{x}) = \mathbf{x} + \mathbf{t}$，當 $\mathbf{x}=\mathbf{0}$ 時，結果是    $\mathbf{t}$，原點移動了
 
-為了用同一個矩陣乘法框架來處理平移，我們需要「升維」  
+<img width="431" height="217" alt="image" src="https://github.com/user-attachments/assets/90308b1f-bca4-4d4e-9aac-18efbad2de80" />
 
-將 2D 點 $(x, y)$ 表示為 3D 向量  $$\begin{bmatrix} x \\ y \\ 1 \end{bmatrix}$$  
+### 2D
+1. 平移 (Translation)
 
-將 3D 點 $(x, y, z)$ 表示為 4D 向量  $$\begin{bmatrix} x \\ y \\ z \\ 1 \end{bmatrix}$$  
+要將點 $(x, y)$ 移動 $(t_x, t_y)$：
+ $$\mathbf{T}(t_x, t_y) = \begin{bmatrix} 1 & 0 & \mathbf{t_x} \\ 0 & 1 & \mathbf{t_y} \\ 0 & 0 & 1 \end{bmatrix}$$
+
+驗證：$$\begin{bmatrix} 1 & 0 & t_x \\ 0 & 1 & t_y \\ 0 & 0 & 1 \end{bmatrix} \begin{bmatrix} x \\ y \\ 1 \end{bmatrix} = \begin{bmatrix} 1x + 0y + t_x(1) \\ 0x + 1y + t_y(1) \\ 0 + 0 + 1 \end{bmatrix} = \begin{bmatrix} x + t_x \\ y + t_y \\ 1 \end{bmatrix}$$
+
 
