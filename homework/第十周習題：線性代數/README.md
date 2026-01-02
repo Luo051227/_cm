@@ -98,5 +98,16 @@
 
 <img width="732" height="586" alt="image" src="https://github.com/user-attachments/assets/50efd18e-0f72-43ed-80b0-c5263c33117b" />
 
+## 行列式的意義是什麼？如何用遞迴公式計算矩陣的行列式？行列式和體積有什麼關係？如何透過對角化快速計算行列式 如何用 LU 分解快速計算行列式
+**行列式 (Determinant) 是矩陣變換對空間體積的「縮放倍率」**  
 
+### 幾何與代數的結合
+幾何意義：體積的縮放 (Volume Scaling Factor)  
+2D 空間：
+想像一個邊長為 1 的正方形（面積 = 1）。
+經過矩陣 $\mathbf{A} = [\mathbf{u}, \mathbf{v}]$ 變換後，這個正方形變成了一個平行四邊形。  
+
+$$|\det(\mathbf{A})| = \text{平行四邊形的面積}$$  
+3D 空間： 想像一個邊長為 1 的正立方體（體積 = 1）。 經過矩陣變換後，它變成了一個平行六面體  
+$$|\det(\mathbf{A})| = \text{平行六面體的體積}$$  
 
