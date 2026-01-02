@@ -6,9 +6,9 @@
 
 一個函數或變換 $L$ 若要被稱為「線性的」，必須嚴格滿足以下兩個條件：
 
-1. 加法性 (Additivity / Superposition)：兩個向量先相加再變換，等於先變換再相加。$$L(u + v) = L(u) + L(v)$$
+1. 加法性 (Additivity / Superposition)：兩個向量先相加再變換，等於先變換再相加。 $$L(u + v) = L(u) + L(v)$$
 
-2. 齊次性 (Homogeneity / Scaling)：向量放大 $c$ 倍後再變換，等於變換後再放大 $c$ 倍。$$L(c \cdot u) = c \cdot L(u)$$
+2. 齊次性 (Homogeneity / Scaling)：向量放大 $c$ 倍後再變換，等於變換後再放大 $c$ 倍。 $$L(c \cdot u) = c \cdot L(u)$$
 
-兩者合併，即為線性組合 (Linear Combination) 的保存：$$L(c_1 u + c_2 v) = c_1 L(u) + c_2 L(v)$$
+兩者合併，即為線性組合 (Linear Combination) 的保存： $$L(c_1 u + c_2 v) = c_1 L(u) + c_2 L(v)$$
 
