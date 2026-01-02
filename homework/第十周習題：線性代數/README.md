@@ -87,8 +87,6 @@
 ### 2D
 1. 平移 (Translation)
 
-要將點 $(x, y)$ 移動 $(t_x, t_y)$： $$\mathbf{T}(t_x, t_y) = \begin{bmatrix} 1 & 0 & \mathbf{t_x} \\ 0 & 1 & \mathbf{t_y} \\ 0 & 0 & 1 \end{bmatrix}$$
-
-驗證： $$\begin{bmatrix} 1 & 0 & t_x \\ 0 & 1 & t_y \\ 0 & 0 & 1 \end{bmatrix} \begin{bmatrix} x \\ y \\ 1 \end{bmatrix} = \begin{bmatrix} 1x + 0y + t_x(1) \\ 0x + 1y + t_y(1) \\ 0 + 0 + 1 \end{bmatrix} = \begin{bmatrix} x + t_x \\ y + t_y \\ 1 \end{bmatrix}$$
+<img width="596" height="312" alt="image" src="https://github.com/user-attachments/assets/de76f637-c799-44e5-b1d8-528f31d54047" />
 
 
