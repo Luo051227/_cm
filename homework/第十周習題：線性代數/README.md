@@ -71,3 +71,20 @@
 
 在電腦科學（如機器學習）中，矩陣是 2D 張量。 $$\mathbf{X} \in \mathbb{R}^{m \times n}$$ 例如：一張 $100 \times 100$ 的黑白照片，就是一個矩陣，每個數值代表像素亮度。這裡的矩陣不代表運動，只代表靜態資訊
 
+## 如何用矩陣代表 2D / 3D 幾何學中的『平移，縮放，旋轉』操作？
+
+要用矩陣統一表示這三種操作，我們必須引入一個關鍵概念：齊次座標 (Homogeneous Coordinates)
+
+**為什麼需要「齊次座標」？**  
+
+矩陣乘法 $\mathbf{A}\mathbf{x}$ 只能表示「線性變換」（變換後原點必須保持在原點）
+* 縮放 (Scaling)：是線性的。$S(\mathbf{0}) = \mathbf{0}$
+* 旋轉 (Rotation)：是線性的。繞原點旋轉，原點不動
+* 平移 (Translation)：不是線性的。$T(\mathbf{x}) = \mathbf{x} + \mathbf{t}$，當 $\mathbf{x}=\mathbf{0}$ 時，結果是 $\mathbf{t}$，原點移動了
+
+為了用同一個矩陣乘法框架來處理平移，我們需要「升維」  
+
+將 2D 點 $(x, y)$ 表示為 3D 向量 $\begin{bmatrix} x \\ y \\ 1 \end{bmatrix}$  
+
+將 3D 點 $(x, y, z)$ 表示為 4D 向量 $\begin{bmatrix} x \\ y \\ z \\ 1 \end{bmatrix}$  
+
