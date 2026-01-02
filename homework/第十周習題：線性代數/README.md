@@ -78,9 +78,9 @@
 **為什麼需要「齊次座標」？**  
 
 矩陣乘法 $\mathbf{A}\mathbf{x}$ 只能表示「線性變換」（變換後原點必須保持在原點）
-* 縮放 (Scaling)：是線性的。$S(\mathbf{0}) = \mathbf{0}$
+* 縮放 (Scaling)：是線性的。 $S(\mathbf{0}) = \mathbf{0}$
 * 旋轉 (Rotation)：是線性的。繞原點旋轉，原點不動
-* 平移 (Translation)：不是線性的。$T(\mathbf{x}) = \mathbf{x} + \mathbf{t}$，當 $\mathbf{x}=\mathbf{0}$ 時，結果是 $\mathbf{t}$，原點移動了
+* 平移 (Translation)：不是線性的。 $T(\mathbf{x}) = \mathbf{x} + \mathbf{t}$，當 $\mathbf{x}=\mathbf{0}$ 時，結果是    $\mathbf{t}$，原點移動了
 
 為了用同一個矩陣乘法框架來處理平移，我們需要「升維」  
 
