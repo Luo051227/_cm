@@ -121,6 +121,19 @@ $$|\det(\mathbf{A})| = \text{平行六面體的體積}$$
 
 若 $\det(\mathbf{A}) = 0$，代表體積變成了 0  
 
-矩陣是不可逆的 (Non-invertible / Singular)，因為你無法從一張紙「吹氣」把它還原成原本的盒子（資訊遺失了）  
+矩陣是不可逆的 (Non-invertible / Singular)  
 
+
+**定義與遞迴關係**
+
+$$\det(\mathbf{A}) = \sum_{j=1}^{n} (-1)^{1+j} \cdot a_{1j} \cdot \det(\mathbf{M}_{1j})$$ 
+
+* $a_{1j}$：矩陣第一列第 $j$ 行的元素
+* $(-1)^{1+j}$：符號項，呈現棋盤式交替 $(+, -, +, - \dots)$
+* $\mathbf{M}_{1j}$ (Minor Matrix)：子矩陣。指將 $\mathbf{A}$ 的「第 1 列」與「第 $j$ 行」刪除後，剩下來的 $(n-1) \times (n-1)$ 矩陣
+
+邊界條件 (Base Case)：
+
+* 當 $n=1$ 時： $\det([a]) = a$
+* 當 $n=2$ 時： $\det\begin{pmatrix} a & b \\ c & d \end{pmatrix} = ad - bc$  
 
