@@ -163,5 +163,5 @@ LU 分解本質上就是高斯消去法 (Gaussian Elimination) 的記錄過程
 * 前向代入 (Forward Substitution)：解 $\mathbf{Ly} = \mathbf{b}$ 求 $\mathbf{y}$
 * 後向代入 (Backward Substitution)：解 $\mathbf{Ux} = \mathbf{y}$ 求 $\mathbf{x}$
 
-
+[AI](https://gemini.google.com/share/1939c39c4616)
 
