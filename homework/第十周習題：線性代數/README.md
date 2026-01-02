@@ -49,3 +49,10 @@
 2. 加法封閉：若 $\mathbf{u}, \mathbf{v} \in W$，則 $\mathbf{u} + \mathbf{v} \in W$
 3. 數乘封閉：若 $\mathbf{u} \in W, c \in \mathbb{R}$，則 $c\mathbf{u} \in W$
 
+## 矩陣和向量之間有何關係？矩陣代表的意義是什麼？
+
+* **向量 (Vector) 是名詞**：它代表狀態、數據、或是空間中的一個點
+* **矩陣 (Matrix) 是動詞**：它代表一種運動或變換（Transformation）
+
+矩陣與向量的關係在於： **矩陣作用於向量，使向量發生移動、旋轉或變形**
+
