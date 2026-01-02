@@ -142,10 +142,15 @@ $$\det(\mathbf{A}) = \sum_{j=1}^{n} (-1)^{1+j} \cdot a_{1j} \cdot \det(\mathbf{M
 
 乘法分配律 $\det(\mathbf{XY}) = \det(\mathbf{X})\det(\mathbf{Y})$ 與反矩陣性質 $\det(\mathbf{P}^{-1}) = \frac{1}{\det(\mathbf{P})}$
 
-推導： $$\begin{aligned}
-\det(\mathbf{A}) &= \det(\mathbf{P} \mathbf{D} \mathbf{P}^{-1}) \\
-&= \det(\mathbf{P}) \cdot \det(\mathbf{D}) \cdot \det(\mathbf{P}^{-1}) \\
-&= \det(\mathbf{P}) \cdot \frac{1}{\det(\mathbf{P})} \cdot \det(\mathbf{D}) \\
-&= 1 \cdot \det(\mathbf{D})
-\end{aligned}$$
+<img width="529" height="369" alt="image" src="https://github.com/user-attachments/assets/13aed96a-e18a-4fba-bbb0-13c4b1d44489" />
+
+### LU 分解
+
+定義
+
+$$\mathbf{A} = \mathbf{L} \mathbf{U}$$
+
+$\mathbf{L}$ (Lower Triangular Matrix)：下三角矩陣，且對角線元素皆為 1 (Unit Lower Triangular)。 $$\mathbf{L} = \begin{bmatrix} 1 & 0 & 0 \\ \ell_{21} & 1 & 0 \\ \ell_{31} & \ell_{32} & 1 \end{bmatrix}$$
+
+$\mathbf{U}$ (Upper Triangular Matrix)：上三角矩陣，包含高斯消去後的結果。 $$\mathbf{U} = \begin{bmatrix} u_{11} & u_{12} & u_{13} \\ 0 & u_{22} & u_{23} \\ 0 & 0 & u_{33} \end{bmatrix}$$ 
 
