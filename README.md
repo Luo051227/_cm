@@ -19,16 +19,37 @@
 ## 微積分基本定理驗證 theorem1(f, x)
 $$r = \frac{d}{dx} \left( \int_{0}^{x} f(t) \, dt \right)$$
 
+全使用AI
 
 [作業](https://github.com/Luo051227/_cm/tree/main/homework/%E7%BF%92%E9%A1%8C1)
 
 # 習題 2 : 請寫程式求解二次多項式的根
+使用了 cmath 函式庫
+
+公式： $$ax^2 + bx + c = 0$$
+
+公式解： $$x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$
+
+先使用a、b、c代表 $$ax^2+bx+c=0$$
+
+**判別式**  $$b^2 - 4ac$$
+
+<img width="764" height="347" alt="image" src="https://github.com/user-attachments/assets/84a9a5f1-5f63-41d5-9e78-8b8049ab5af9" />
+
+用 lambda 建立了一個「簡短的數學函數」
+定義 $$f(x) = ax^2 + bx + c$$
+`rel_tol=1e-9`：這是容許的誤差範圍（小數點後 9 位）
+
+全使用AI
+
 [作業](https://github.com/Luo051227/_cm/tree/main/homework/%E7%BF%92%E9%A1%8C2)
 
 # 習題 3 : 請寫程式求解三次多項式的根 (加分題）
+全使用AI 
 [作業](https://github.com/Luo051227/_cm/tree/main/homework/%E7%BF%92%E9%A1%8C3)
 
 # 習題 4 : （思考）請寫一個函數 root(c) 求出 n 次多項式的根 （ n>=5 的時候，數學上證明沒有公式 -- 伽羅瓦定理）
+全使用AI 
 [作業](https://github.com/Luo051227/_cm/tree/main/homework/%E7%BF%92%E9%A1%8C4)
 
 # 第二週習題：有限體 
@@ -82,6 +103,8 @@ $$r = \frac{d}{dx} \left( \int_{0}^{x} f(t) \, dt \right)$$
 - AI 回答提供了有限體的定義與例子，對於程式設計的指引是：在 GF(p) 上把每個元素實作成一個物件（包含模 p 的規範化與逆元計算），然後提供加、減、乘、除的 operator。  
 - 程式驗證部分把抽象的公理（群公理、分配律）變成「窮舉檢查」，這在有限集合上是可行且直接的：直接檢查所有可能的 a,b,c 組合是否符合條件。  
 - 對於更進階的 GF(p^n)（當 n>1）需要做多項式運算與模不可約多項式，這會使實作與驗證更複雜；本次作業先聚焦在 GF(p) 做完整的理解與程式驗證。
+
+全使用AI
 
 [作業](https://github.com/Luo051227/_cm/tree/main/homework/%E7%AC%AC%E4%BA%8C%E9%80%B1%E7%BF%92%E9%A1%8C%EF%BC%9A%E6%9C%89%E9%99%90%E9%AB%94)
 [AI](https://chatgpt.com/share/6924476a-fd44-8012-a7be-87cdaada71f6)
@@ -148,6 +171,9 @@ print(f"直線交點: {intersect_lines(1, 1, 2, 1, -1, 0)}") # 預期 (1.0, 1.0)
 `D = A_1B_2 - A_2B_1` `D_x = C_2B_1 - C_1B_2` `D_y = A_2C_1 - A_1C_2`
 
 如果 D \neq 0，則交點為 (x, y) = (\frac{D_x}{D}, \frac{D_y}{D})。如果 $D = 0$：若 D_x = 0 且 D_y = 0，則兩線重合（無限多交點）。若 D_x \neq 0 或 D_y \neq 0，則兩線平行（無交點）。  
+
+全使用AI
+
 [作業](https://github.com/Luo051227/_cm/tree/main/homework/%E7%AC%AC%E4%B8%89%E9%80%B1%E7%BF%92%E9%A1%8C%EF%BC%9A%E5%B9%BE%E4%BD%95%E5%AD%B8%EF%BC%9A%EF%BC%88%E9%BB%9E%EF%BC%8C%E7%B7%9A%EF%BC%8C%E5%9C%93%EF%BC%89%E4%B8%96%E7%95%8C%E7%9A%84%E5%BB%BA%E6%A7%8B)
 [AI](https://gemini.google.com/share/ca1dd991cd0f)
 # 第八週習題：機率統計 - 檢定背後的數學原理
@@ -534,6 +560,9 @@ plt.show()
   `線條永遠不會停下來，形成完美的蝴蝶。這就是我們真實世界的「天氣」`
 * $\rho = 99$： 超級加熱，蝴蝶變成了一團亂麻（更複雜的混沌）  
   `雖然還是在繞圈，但範圍變得更大、切換頻率更快，像是躁動的蝴蝶`  
-**只要改變一個參數，整個系統的行為模式，可能會從「穩定」瞬間變成「混沌」**  
+**只要改變一個參數，整個系統的行為模式，可能會從「穩定」瞬間變成「混沌」**
+
+全使用AI
+
 [作業](https://github.com/Luo051227/_cm/tree/main/homework/%E6%9C%9F%E4%B8%AD)
 [AI](https://gemini.google.com/share/277a8dea3197)
