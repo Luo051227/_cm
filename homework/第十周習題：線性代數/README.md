@@ -132,8 +132,20 @@ $$\det(\mathbf{A}) = \sum_{j=1}^{n} (-1)^{1+j} \cdot a_{1j} \cdot \det(\mathbf{M
 * $(-1)^{1+j}$：符號項，呈現棋盤式交替 $(+, -, +, - \dots)$
 * $\mathbf{M}_{1j}$ (Minor Matrix)：子矩陣。指將 $\mathbf{A}$ 的「第 1 列」與「第 $j$ 行」刪除後，剩下來的 $(n-1) \times (n-1)$ 矩陣
 
-邊界條件 (Base Case)：
+<img width="329" height="116" alt="image" src="https://github.com/user-attachments/assets/30c03d98-c484-4968-8284-85bcfa15644f" />
 
-* 當 $n=1$ 時： $\det([a]) = a$
-* 當 $n=2$ 時： $$\det\begin{pmatrix} a & b \\ c & d \end{pmatrix} = ad - bc$$  
+### 對角化快速計算行列式
+若矩陣 $\mathbf{A}$ 是可對角化的，則存在一個可逆矩陣 $\mathbf{P}$ 和一個對角矩陣 $\mathbf{D}$，使得： $$\mathbf{A} = \mathbf{P} \mathbf{D} \mathbf{P}^{-1}$$
+
+* $\mathbf{D}$ 的對角線元素是對應的特徵值 (Eigenvalues) $\lambda_1, \lambda_2, \dots, \lambda_n$
+* $\mathbf{P}$ 的行向量是對應的特徵向量 (Eigenvectors)
+
+乘法分配律 $\det(\mathbf{XY}) = \det(\mathbf{X})\det(\mathbf{Y})$ 與反矩陣性質 $\det(\mathbf{P}^{-1}) = \frac{1}{\det(\mathbf{P})}$
+
+推導： $$\begin{aligned}
+\det(\mathbf{A}) &= \det(\mathbf{P} \mathbf{D} \mathbf{P}^{-1}) \\
+&= \det(\mathbf{P}) \cdot \det(\mathbf{D}) \cdot \det(\mathbf{P}^{-1}) \\
+&= \det(\mathbf{P}) \cdot \frac{1}{\det(\mathbf{P})} \cdot \det(\mathbf{D}) \\
+&= 1 \cdot \det(\mathbf{D})
+\end{aligned}$$
 
