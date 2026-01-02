@@ -92,3 +92,4 @@ Sigma = np.diag(s)
 A_svd_recon = U_svd @ Sigma @ Vh
 
 verify_and_print("SVD 分解 (U@Σ@Vh)", A, A_svd_recon)
+# gemini
