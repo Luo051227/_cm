@@ -56,3 +56,5 @@
 
 矩陣與向量的關係在於： **矩陣作用於向量，使向量發生移動、旋轉或變形**
 
+幾何意義：空間的變換 (Linear Transformation)這是理解矩陣最直觀的方式。矩陣 $\mathbf{A}$ 是一個函數，它吃進一個向量 $\mathbf{x}$，吐出一個新向量 $\mathbf{y}$。$$\mathbf{y} = f(\mathbf{x}) = \mathbf{A}\mathbf{x}$$這個「變換」包含了：旋轉 (Rotation)縮放 (Scaling)剪切 (Shear)投影 (Projection)
+
