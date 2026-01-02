@@ -4,5 +4,5 @@
 
 公式解： $$x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$
 
-先使用a、b、c代表$$ax^2+bx+c=0$$
+先使用a、b、c代表 $$ax^2+bx+c=0$$
 
