@@ -60,4 +60,4 @@
 空間的變換 (Linear Transformation)這是理解矩陣最直觀的方式。矩陣 $\mathbf{A}$ 是一個函數，它吃進一個向量 $\mathbf{x}$，吐出一個新向量 $\mathbf{y}$。 $$\mathbf{y} = f(\mathbf{x}) = \mathbf{A}\mathbf{x} $$這個「變換」包含了：旋轉 (Rotation)縮放 (Scaling)剪切 (Shear)投影 (Projection)
 
 代數意義：
-聯立方程式 (System of Equations)矩陣是解方程組的工具。 $$\begin{cases} 2x + 3y = 5 \\ 4x - y = 2 \end{cases} \quad \xrightarrow{\text{矩陣化}} \quad \begin{bmatrix} 2 & 3 \\ 4 & -1 \end{bmatrix} \begin{bmatrix} x \\ y \end{bmatrix} = \begin{bmatrix} 5 \\ 2 \end{bmatrix} $$這裡的矩陣 $\mathbf{A}$ 代表系統的結構，向量 $\mathbf{x}$ 是未知數，向量 $\mathbf{b}$ 是結果
+聯立方程式 (System of Equations)矩陣是解方程組的工具。 $$\begin{cases} 2x + 3y = 5 \\ 4x - y = 2 \end{cases} \quad \xrightarrow{\text{矩陣化}} \quad \begin{bmatrix} 2 & 3 \\ 4 & -1 \end{bmatrix} \begin{bmatrix} x \\ y \end{bmatrix} = \begin{bmatrix} 5 \\ 2 \end{bmatrix} $$ 這裡的矩陣 $\mathbf{A}$ 代表系統的結構，向量 $\mathbf{x}$ 是未知數，向量 $\mathbf{b}$ 是結果
