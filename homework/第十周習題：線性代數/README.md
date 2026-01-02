@@ -84,7 +84,7 @@
 
 為了用同一個矩陣乘法框架來處理平移，我們需要「升維」  
 
-將 2D 點 $(x, y)$ 表示為 3D 向量 $$\begin{bmatrix} x \\ y \\ 1 \end{bmatrix}$$  
+將 2D 點 $(x, y)$ 表示為 3D 向量  $$\begin{bmatrix} x \\ y \\ 1 \end{bmatrix}$$  
 
-將 3D 點 $(x, y, z)$ 表示為 4D 向量 $$\begin{bmatrix} x \\ y \\ z \\ 1 \end{bmatrix}$$  
+將 3D 點 $(x, y, z)$ 表示為 4D 向量  $$\begin{bmatrix} x \\ y \\ z \\ 1 \end{bmatrix}$$  
 
