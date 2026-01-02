@@ -146,11 +146,22 @@ $$\det(\mathbf{A}) = \sum_{j=1}^{n} (-1)^{1+j} \cdot a_{1j} \cdot \det(\mathbf{M
 
 ### LU 分解
 
-定義
+**定義**
 
 $$\mathbf{A} = \mathbf{L} \mathbf{U}$$
 
-$\mathbf{L}$ (Lower Triangular Matrix)：下三角矩陣，且對角線元素皆為 1 (Unit Lower Triangular)。 $$\mathbf{L} = \begin{bmatrix} 1 & 0 & 0 \\ \ell_{21} & 1 & 0 \\ \ell_{31} & \ell_{32} & 1 \end{bmatrix}$$
+<img width="637" height="279" alt="image" src="https://github.com/user-attachments/assets/5a998238-e593-464f-bc0f-7f5247cf702c" />
 
-$\mathbf{U}$ (Upper Triangular Matrix)：上三角矩陣，包含高斯消去後的結果。 $$\mathbf{U} = \begin{bmatrix} u_{11} & u_{12} & u_{13} \\ 0 & u_{22} & u_{23} \\ 0 & 0 & u_{33} \end{bmatrix}$$ 
+**計算原理 (Doolittle Algorithm)**  
+LU 分解本質上就是高斯消去法 (Gaussian Elimination) 的記錄過程  
+ $Row_i \leftarrow Row_i - \alpha \cdot Row_k$ 把矩陣變為上三角（$\mathbf{U}$）時，那個乘數 $\alpha$ 實際上就是 $\mathbf{L}$ 矩陣中對應位置 $(\ell_{ik})$ 的元素  
+
+**應用：解方程式**
+
+一旦有了 $\mathbf{L}$ 和 $\mathbf{U}$，求解 $\mathbf{Ax} = \mathbf{b}$ 變成了兩個簡單步驟：
+
+* 前向代入 (Forward Substitution)：解 $\mathbf{Ly} = \mathbf{b}$ 求 $\mathbf{y}$
+* 後向代入 (Backward Substitution)：解 $\mathbf{Ux} = \mathbf{y}$ 求 $\mathbf{x}$
+
+
 
