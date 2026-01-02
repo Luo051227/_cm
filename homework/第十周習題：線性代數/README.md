@@ -135,5 +135,5 @@ $$\det(\mathbf{A}) = \sum_{j=1}^{n} (-1)^{1+j} \cdot a_{1j} \cdot \det(\mathbf{M
 邊界條件 (Base Case)：
 
 * 當 $n=1$ 時： $\det([a]) = a$
-* 當 $n=2$ 時： $\det\begin{pmatrix} a & b \\ c & d \end{pmatrix} = ad - bc$  
+* 當 $n=2$ 時： $$\det\begin{pmatrix} a & b \\ c & d \end{pmatrix} = ad - bc$$  
 
