@@ -93,7 +93,7 @@
 
 ### 3D
 
-在 3D 空間中，我們使用 $4 \times 4$ 矩陣作用於齊次座標 $\begin{bmatrix} x \\ y \\ z \\ 1 \end{bmatrix}$ 上
+在 3D 空間中，我們使用 $4 \times 4$ 矩陣作用於齊次座標 $ \begin{bmatrix} x \\ y \\ z \\ 1 \end{bmatrix} $ 上
 
 <img width="465" height="419" alt="image" src="https://github.com/user-attachments/assets/e82061f5-8764-47fb-8847-2ea376fef91c" />
 
