@@ -93,9 +93,8 @@
 
 ### 3D
 
-在 3D 空間中，我們使用 $4 \times 4$ 矩陣作用於齊次座標 $ \begin{bmatrix} x \\ y \\ z \\ 1 \end{bmatrix} $ 上
+<img width="598" height="553" alt="image" src="https://github.com/user-attachments/assets/ab760d28-00a1-4104-871e-5723574027f0" />
 
-<img width="465" height="419" alt="image" src="https://github.com/user-attachments/assets/e82061f5-8764-47fb-8847-2ea376fef91c" />
 
 <img width="732" height="586" alt="image" src="https://github.com/user-attachments/assets/50efd18e-0f72-43ed-80b0-c5263c33117b" />
 
