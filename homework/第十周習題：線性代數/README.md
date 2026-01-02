@@ -6,10 +6,16 @@
 
 一個函數或變換 $L$ 若要被稱為「線性的」，必須嚴格滿足以下兩個條件：
 
-1. 加法性 (Additivity / Superposition)：兩個向量先相加再變換，等於先變換再相加。 $$L(u + v) = L(u) + L(v)$$
+1. **加法性 (Additivity / Superposition)**：兩個向量先相加再變換，等於先變換再相加。 $$L(u + v) = L(u) + L(v)$$
 
-2. 齊次性 (Homogeneity / Scaling)：向量放大 $c$ 倍後再變換，等於變換後再放大 $c$ 倍。 $$L(c \cdot u) = c \cdot L(u)$$
+2. **齊次性 (Homogeneity / Scaling)**：向量放大 $c$ 倍後再變換，等於變換後再放大 $c$ 倍。 $$L(c \cdot u) = c \cdot L(u)$$
 
 兩者合併，即為線性組合 (Linear Combination) 的保存： $$L(c_1 u + c_2 v) = c_1 L(u) + c_2 L(v)$$
 
 直線方程式 $y = mx + b$ (若 $b \neq 0$) 在線性代數中不是線性變換，因為它不滿足 $L(0) = 0$（原點必須映射到原點）。這被稱為「仿射變換 (Affine Transformation)」
+
+「代數」源於阿拉伯語 al-jabr，原意是還原與移項。
+
+1. 抽象化：我們不再處理具體的 $1, 2, 3$，而是處理向量 $\mathbf{v}$、矩陣 $\mathbf{A}$
+2. 結構研究：我們定義了一個集合（向量空間）以及在其上的運算規則（加法、數乘），並研究這些規則產生的性質（如秩 Rank、特徵值 Eigenvalue），這就是代數結構
+
