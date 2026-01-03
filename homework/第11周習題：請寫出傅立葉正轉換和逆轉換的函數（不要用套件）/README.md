@@ -9,11 +9,11 @@
 離散化公式：
 積分 $\int$ 變為求和 $\sum$，連續頻率 $\omega$ 變為離散頻率索引 $k$
 
-## 正轉換 (DFT)
+### 正轉換 (DFT)
 
 $$X[k] = \sum_{n=0}^{N-1} x[n] \cdot e^{-i \frac{2\pi}{N} k n}, \quad k = 0, \dots, N-1$$
 
-## 逆轉換 (IDFT)
+### 逆轉換 (IDFT)
 
 $$x[n] = \frac{1}{N} \sum_{k=0}^{N-1} X[k] \cdot e^{i \frac{2\pi}{N} k n}, \quad n = 0, \dots, N-1$$
 
