@@ -3,7 +3,7 @@
 
  $a, b, c$ 是常數，$y$ 是 $x$ 的函數。所謂「齊次」是指等號右邊為 $0$（沒有外力項）  
 
- 1. 核心觀念：特徵方程式 (Characteristic Equation)
+1. 核心觀念：特徵方程式 (Characteristic Equation)
 指數函數 $y = e^{rx}$ 是解答的原型
 因為指數函數的微分還是指數函數（$y' = re^{rx}$, $y'' = r^2 e^{rx}$）
 
