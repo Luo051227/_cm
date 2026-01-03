@@ -28,4 +28,22 @@ $$x[n] = \frac{1}{N} \sum_{k=0}^{N-1} X[k] \cdot e^{i \frac{2\pi}{N} k n}, \quad
 * $\sum$ (加總)：計算「相似度」
 
 `加總出來的值很大（絕對值大），代表訊號裡含有很強的 $k$ 頻率成分；如果接近 0，代表兩者不相關（正交）`  
+2. 【矩陣展開】：如何把 $\sum$ 變成矩陣乘法？
+<img width="723" height="564" alt="image" src="https://github.com/user-attachments/assets/223981f7-47bc-4ab7-bbbd-a97cc9f214d4" />
+
+3. 【程式邏輯】：NumPy 的 Broadcasting 是如何「魔術般」地生成矩陣的？
+
+```python
+n = np.arange(N).reshape(1, -1)  # row vector
+k = np.arange(N).reshape(-1, 1)  # column vector
+M = np.exp(-2j * np.pi * k * n / N)
+```
+
+假設 $N=3$
+
+`n `是橫的： `[[0, 1, 2]]`  
+`k `是直的： `[[0], [1], [2]]`  
+
+<img width="651" height="200" alt="image" src="https://github.com/user-attachments/assets/4a4ef012-7bc4-4141-bb74-aaeb167cbdfb" />
+
 
