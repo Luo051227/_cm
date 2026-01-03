@@ -46,4 +46,4 @@ M = np.exp(-2j * np.pi * k * n / N)
 
 <img width="651" height="200" alt="image" src="https://github.com/user-attachments/assets/4a4ef012-7bc4-4141-bb74-aaeb167cbdfb" />
 
-
+[AI](https://gemini.google.com/share/a87a35439e12)
