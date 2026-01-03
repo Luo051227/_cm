@@ -4,9 +4,14 @@ def dft(fx, x, omega):
     dx = x[1] - x[0]
     F = []
 
-    for w in omega:
-        Fw = np.sum(fx * np.exp(-1j * w * x)) * dx
-        F.append(Fw)
+    for i in range(len(omega)):
+        w = omega[i]
+        total = 0
+
+        for k in range(len(x)):
+            total = total + fx[k] * np.exp(-1j * w * x[k]) * dx
+
+        F.append(total)
 
     return np.array(F)
 
@@ -14,9 +19,15 @@ def idft(Fw, omega, x):
     dw = omega[1] - omega[0]
     f = []
 
-    for xi in x:
-        fx = np.sum(Fw * np.exp(1j * omega * xi)) * dw / (2 * np.pi)
-        f.append(fx)
+    for i in range(len(x)):
+        xi = x[i]
+        total = 0
+
+        for k in range(len(omega)):
+            total = total + Fw[k] * np.exp(1j * omega[k] * xi) * dw
+
+        total = total / (2 * np.pi)
+        f.append(total)
 
     return np.array(f)
 
@@ -28,10 +39,8 @@ omega = np.linspace(-L, L, N)
 
 f = np.exp(-x**2)
 
-F = dft(f, x, omega)
-
-f_rec = idft(F, omega, x)
+F = dft(f, x, omega)# 正
+f_rec = idft(F, omega, x)# 逆
 
 error = np.max(np.abs(f - f_rec.real))
 print("最大誤差:", error)
-
