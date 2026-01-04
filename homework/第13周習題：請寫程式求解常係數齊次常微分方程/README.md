@@ -20,6 +20,9 @@
 3. 高階方程式 (Higher Order ODEs)
 
 寫出特徵方程式（如 $r^3 - 1 = 0$）
-解出所有的根
+
+解出所有的根  
+
 重根規則推廣： 如果某個根 $r$ 重複出現 $k$ 次，
+
 則對應的解為： $$e^{rx}, \quad xe^{rx}, \quad x^2 e^{rx}, \quad \dots, \quad x^{k-1}e^{rx}$$
