@@ -17,11 +17,8 @@
 | **2. 重根**<br>($\Delta = 0$) | 兩個相同的實數<br>$r_1 = r_2 = r$ | $$y = c_1 e^{rx} + c_2 x e^{rx}$$ | 因為只有一個根，缺少第二個線性獨立解，所以必須乘上 $x$ 來補足。 |
 | **3. 共軛複數根**<br>($\Delta < 0$) | $r = \alpha \pm i\beta$<br>($\alpha$是實部, $\beta$是虛部) | $$y = e^{\alpha x}(c_1 \cos \beta x + c_2 \sin \beta x)$$ | 利用歐拉公式將複數指數轉換為三角函數，解會出現震盪。 |
 
-3. 高階方程式 (Higher Order ODEs)
-寫出特徵方程式（如 $r^3 - 1 = 0$）
+3. 高階方程式 (Higher Order ODEs)  
+* 寫出特徵方程式（如 $r^3 - 1 = 0$）
+* 解出所有的根
+* 重根規則推廣： 如果某個根 $r$ 重複出現 $k$ 次，則對應的解為： $$e^{rx}, \quad xe^{rx}, \quad x^2 e^{rx}, \quad \dots, \quad x^{k-1}e^{rx}$$
 
-解出所有的根  
-
-重根規則推廣： 如果某個根 $r$ 重複出現 $k$ 次，
-
-則對應的解為： $$e^{rx}, \quad xe^{rx}, \quad x^2 e^{rx}, \quad \dots, \quad x^{k-1}e^{rx}$$
