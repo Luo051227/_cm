@@ -48,6 +48,50 @@ $$r = \frac{d}{dx} \left( \int_{0}^{x} f(t) \, dt \right)$$
 [作業](https://github.com/Luo051227/_cm/tree/main/homework/%E7%BF%92%E9%A1%8C2)
 
 # 習題 3 : 請寫程式求解三次多項式的根 (加分題）
+```python
+import cmath
+
+def root3(a, b, c, d):
+    if a == 0:
+        raise ValueError("不是三次方程")
+    
+    # 降次變數 x = y - b/(3a)
+    p = (3*a*c - b**2) / (3*a**2)
+    q = (2*b**3 - 9*a*b*c + 27*a**2*d) / (27*a**3)
+    
+    # 判斷三次公式
+    delta = (q/2)**2 + (p/3)**3
+    
+    # 三次公式解
+    u = (-q/2 + cmath.sqrt(delta))**(1/3)
+    v = (-q/2 - cmath.sqrt(delta))**(1/3)
+    
+    # 避免 u 或 v 為 0
+    if u == 0:
+        u = 0
+    if v == 0:
+        v = 0
+    
+    # 三個根
+    y1 = u + v
+    y2 = -(u+v)/2 + (u-v)*cmath.sqrt(3)*1j/2
+    y3 = -(u+v)/2 - (u-v)*cmath.sqrt(3)*1j/2
+    
+    # 回到 x
+    x1 = y1 - b/(3*a)
+    x2 = y2 - b/(3*a)
+    x3 = y3 - b/(3*a)
+    
+    return x1, x2, x3
+
+roots = root3(1, -6, 11, -6)
+x1, x2, x3 = roots
+
+print("Root 1:", x1)
+print("Root 2:", x2)
+print("Root 3:", x3)
+# 有用AI修改
+```
 全使用AI 
 [作業](https://github.com/Luo051227/_cm/tree/main/homework/%E7%BF%92%E9%A1%8C3)
 
