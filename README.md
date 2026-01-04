@@ -8,6 +8,9 @@
 教師 | [陳鍾誠](https://www.nqu.edu.tw/educsie/index.php?act=blog&code=list&ids=4)
 學校科系 | [金門大學資訊工程系](https://www.nqu.edu.tw/educsie/index.php)
 課程教材 | https://github.com/ccc114a/py2cs 
+
+## 除了有貼程式碼在 README.md的，其他都是使用AI
+
 # 習題 1 : 請用程式驗證微積分基本定理
 ## 數值微分 df(f, x)
 <img width="473" height="74" alt="image" src="https://github.com/user-attachments/assets/6deec916-a48a-42f8-ae86-a4fa35cf2bc4" />
