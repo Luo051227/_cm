@@ -18,7 +18,6 @@
 | **3. 共軛複數根**<br>($\Delta < 0$) | $r = \alpha \pm i\beta$<br>($\alpha$是實部, $\beta$是虛部) | $$y = e^{\alpha x}(c_1 \cos \beta x + c_2 \sin \beta x)$$ | 利用歐拉公式將複數指數轉換為三角函數，解會出現震盪。 |
 
 3. 高階方程式 (Higher Order ODEs)
-
 寫出特徵方程式（如 $r^3 - 1 = 0$）
 
 解出所有的根  
